@@ -1,0 +1,103 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #f3f2f1, #e1dfdd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #d0d0d0;
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 103, 184, 0.2);
+    color: #323130;
+    text-align: center;
+}
+
+/* Header */
+.header h1 {
+    color: #0067b8; /* Microsoft blue */
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Form */
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Inputs */
+input.username,
+input.password {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #c8c6c4;
+    background: #ffffff;
+    color: #323130;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input.username:focus,
+input.password:focus {
+    border-color: #0067b8;
+    outline: none;
+}
+
+/* Submit button */
+input.submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #0067b8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input.submit:hover {
+    background-color: #004578;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    input.submit {
+        font-size: 16px;
+    }
+}

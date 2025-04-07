@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            background-color: #f3f2f1;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #323130;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 103, 184, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #0067b8;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .logout-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #d13438;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #a4262c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Pallavi</h1>
+        <p>You’re logged in successfully!</p>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            alert("Logged out successfully!");
+            window.location.href = "login.html"; 
+        }
+    </script>
+</body>
+</html>
